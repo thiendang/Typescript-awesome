@@ -1,10 +1,13 @@
-enum Role {
+const enum Role {
   ADMIN = 'ADMIN',
   AUTHOR = 'AUTHOR',
   MEMBER = 'MEMBER'
 }
 
-const user = {
+const user: {
+  name: string,
+  role: Role
+} = {
   name: 'Donna',
   role: Role.ADMIN
 }
